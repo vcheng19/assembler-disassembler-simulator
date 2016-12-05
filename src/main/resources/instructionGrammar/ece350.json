@@ -27,6 +27,60 @@
 		]
 	},
 	{
+		"name": "fun",
+		"regex": "\\s*\\$(\\d+)\\s*,\\s*\\$(\\d+)\\s*,\\s*\\$(\\d+)\\s*",
+		"vars": [
+			{
+				"numBits": 5,
+				"index": 22,
+				"isBranch": false
+			},
+			{
+				"numBits": 5,
+				"index": 17,
+				"isBranch": false
+			},
+			{
+				"numBits": 5,
+				"index": 12,
+				"isBranch": false
+			}
+		],
+		"opCodes": [
+			{
+				"opCode": 28,
+				"index": 2
+			}
+		]
+	},
+	{
+		"name": "pls",
+		"regex": "\\s*\\$(\\d+)\\s*,\\s*\\$(\\d+)\\s*,\\s*\\$(\\d+)\\s*",
+		"vars": [
+			{
+				"numBits": 5,
+				"index": 22,
+				"isBranch": false
+			},
+			{
+				"numBits": 5,
+				"index": 17,
+				"isBranch": false
+			},
+			{
+				"numBits": 5,
+				"index": 12,
+				"isBranch": false
+			}
+		],
+		"opCodes": [
+			{
+				"opCode": 30,
+				"index": 2
+			}
+		]
+	},
+	{
 		"name": "addi",
 		"regex": "\\s*\\$(\\d+)\\s*,\\s*\\$(\\d+)\\s*,\\s*(-?[a-zA-Z0-9]+)\\s*",
 		"vars": [
@@ -404,6 +458,33 @@
 		"opCodes": [
 			{
 				"opCode": 7,
+				"index": 27
+			}
+		]
+	},
+	{
+		"name": "sw2",
+		"regex": "\\s*\\$(\\d+)\\s*,\\s*(-?[a-zA-Z0-9]+)\\s*\\(\\s*\\$(\\d+)\\s*\\)\\s*",
+		"vars": [
+			{
+				"numBits": 5,
+				"index": 22,
+				"isBranch": false
+			},
+			{
+				"numBits": -17,
+				"index": 0,
+				"isBranch": false
+			},
+			{
+				"numBits": 5,
+				"index": 17,
+				"isBranch": false
+			}
+		],
+		"opCodes": [
+			{
+				"opCode": 31,
 				"index": 27
 			}
 		]
